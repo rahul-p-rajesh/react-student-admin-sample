@@ -1,0 +1,18 @@
+.actionContainer {
+  margin: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.addForm {
+  width: 500px;
+}
+.OTHER_CONTENT_STYLES {
+  position: relative;
+  z-index: 2;
+}
+
+.BUTTON_WRAPPER_STYLES {
+  position: "relative";
+  z-index: 1;
+}

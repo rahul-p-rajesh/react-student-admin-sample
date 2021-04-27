@@ -1,0 +1,58 @@
+.Card {
+  width: 33%;
+  margin-left: 33%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  background: rgba(255, 223, 223, 1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.MainContainer {
+  background: rgba(255, 136, 130, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  width: 80%;
+  margin-top: 60px;
+  margin-left: 10%;
+  height: 450px;
+  display: flex;
+}
+
+.FeedContiner {
+  background: rgba(255, 136, 130, 0.7);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(15.5px);
+  -webkit-backdrop-filter: blur(15.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  width: 20%;
+  height: 350px;
+  margin-top: 50px;
+  margin-left: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.DataContiner {
+  width: 65%;
+  height: 350px;
+  margin-top: 40px;
+  margin-left: 5%;
+  padding: 10px 15px;
+}
+
+.basicDetailContainer {
+  padding: 0px 10% 6px 10%;
+}
+.editDetailContainer {
+  padding: 0px;
+}

@@ -1,23 +1,35 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+
+//layouts
+import LoginLayout from './layout/LoginLayout';
+import AdminLayout from './layout/AdminLayout'
+import StudentLayout from './layout/StudentLayout'
 import './App.css';
 
+
 function App() {
+  const [token, setToken] = useState();
+  const [user, setUser] = useState({
+    userName: "",
+    userType: ""
+  });
+  localStorage.setItem('userName', user.userName);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+        <Switch>
+          <Route path="/" exact>
+            <LoginLayout tokenHandler={setToken} UserHandler={setUser} />
+          </Route>
+          <Route path="/admin">
+            <AdminLayout />
+          </Route>
+          <Route path="/student">
+            <StudentLayout userName={localStorage.getItem('userName')} />
+          </Route>
+        </Switch>
+      </BrowserRouter>
     </div>
   );
 }
